@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>flyT</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- library -->
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin:0px; overflow:hidden;">
+    <a-scene
+      embedded
+      arjs="debugUIEnabled:false; sourceType: webcam;"
+      vr-mode-ui="enabled: false"
+    >
+      <a-assets>
+        <a-asset-item id="wing-obj" src="assets/model/wings.obj"></a-asset-item>
+        <a-asset-item id="wing-mtl" src="assets/model/wings.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-marker preset="custom" type="pattern" url="assets/src/black.patt">
+        <a-entity
+          id="wing"
+          obj-model="obj:#wing-obj; mtl:#wing-mtl;"
+          position="0 0 0"
+          scale="1 1 1"
+          rotation="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
