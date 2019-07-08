@@ -17,6 +17,8 @@
       <a-assets>
         <a-asset-item id="wing-obj" src="assets/model/wings.obj"></a-asset-item>
         <a-asset-item id="wing-mtl" src="assets/model/wings.mtl"></a-asset-item>
+        <a-asset-item id="ring-obj" src="assets/model/ring.obj"></a-asset-item>
+        <a-asset-item id="ring-mtl" src="assets/model/ring.mtl"></a-asset-item>
       </a-assets>
 
       <a-marker preset="custom" type="pattern" url="assets/black.patt">
@@ -24,10 +26,17 @@
           id="wing"
           obj-model="obj:#wing-obj; mtl:#wing-mtl;"
           position="0 0 0"
-          scale="1 1 1"
-          rotation="0 0 0"
+          scale="6 6 6"
+          rotation="-90 0 0"
         >
         </a-entity>
+        <a-entity
+          preset="id"
+          obj-model="obj:#ring-obj; mtl:#ring-mtl"
+          position="4 0 0"
+          scale="1 1 1"
+          rotation="0 0 0"
+        ></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
