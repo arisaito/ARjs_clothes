@@ -11,3 +11,5 @@ wip
 翼の折れてないエンジェル。<br>
 現在three.jsでpostprocessing effectをつけるなどのアップデート中で
 将来的には服としての商品化を目論んでいます。
+
+<a href="https://www.buymeacoffee.com/damienito" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
