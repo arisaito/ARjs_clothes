@@ -9,5 +9,3 @@ wip
 ![wing](assets/img/wingphoto.png)
 # あとついでに羽根も生やしたかった
 翼の折れてないエンジェル。<br>
-現在three.jsでpostprocessing effectをつけるなどのアップデート中で
-将来的には服としての商品化を目論んでいます。
