@@ -15,20 +15,21 @@
       vr-mode-ui="enabled: false"
     >
       <a-assets>
-        <a-asset-item
+        <!-- <a-asset-item
           id="mone-obj"
           src="assets/src/mone-head2.obj"
         ></a-asset-item>
         <a-asset-item
           id="mone-mtl"
           src="assets/src/mone-head2.mtl"
-        ></a-asset-item>
+        ></a-asset-item> -->
+        <a-asset-item id="mone-model" src="assets/src/archive/mone-head2.gltf">
       </a-assets>
 
       <a-marker preset="custom" type="pattern" url="assets/src/black.patt">
         <a-entity
           id="mone"
-          obj-model="obj:#mone-obj; mtl:#mone-mtl;"
+          gltf-model="#mone-model"
           position="0 0 -5"
           scale="10 10 10"
           rotation="0 -90 60"
